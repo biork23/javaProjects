@@ -4,14 +4,15 @@ import java.util.Scanner;
 public class SueldoEmpleado{
 	private double horasTrabajadas;
 	private double horasExtras;
-	
+	private double descuento;
 	Scanner input = new Scanner(System.in);
 	
 	
 
-	public void Sueldo(double horasTrabajadas, double horasExtras) {
+	public void Sueldo(double horasTrabajadas, double horasExtras, double descuento) {
 		this.horasTrabajadas = horasTrabajadas;
 		this.horasExtras = horasExtras;
+		this.descuento = descuento;
 	}
 	
 	public void DatosNomina() {
@@ -40,6 +41,7 @@ public class SueldoEmpleado{
 	public double CalcularDescuento(double sueldoBruto) {
 		if (sueldoBruto < 2000) {
 			return sueldoBruto * 0.16;
+			
 		}else {
 			return sueldoBruto * 0.18;
 		}
@@ -62,12 +64,20 @@ public class SueldoEmpleado{
 		this.horasExtras = horasExtras;
 	}
 	
+	public void setDescuento(double descuento) {
+		this.descuento = descuento;
+	}
+	
+	
 	public double getHorasTrabajadas() {
 		return horasTrabajadas;
 	}
 	
 	public double getHorasExtras() {
 		return horasExtras;
+	}
+	public double getDescuento() {
+		return descuento;
 	}
 	
 
