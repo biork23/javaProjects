@@ -1,17 +1,18 @@
 package tareasJava;
+import java.util.Scanner;
 
 public class repasoSemana {
 	
 	
 	public static void main(String[] args) {
-		//constructor
-		repasoSemana suma = new repasoSemana();                                                                                                                                                                                                                                                                                            
-		
-	}
-	//metodo
-	public int suma(int a, int b) {
-		int suma = a+b;
-		return suma;
-	}
+		Scanner scanner = new Scanner(System.in);
+		String myString = scanner.next("Hi");
+		int myInt = scanner.nextInt(5);
+		scanner.close();
 
+		System.out.println("myString is: " + myString);
+		System.out.println("myInt is: " + myInt);
+	}
+		
+	
 }
