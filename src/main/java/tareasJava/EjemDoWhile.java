@@ -9,7 +9,7 @@ public class EjemDoWhile {
 		
 		do {
 			System.out.println("Tienes que ingresar un numero positivo: ");
-			dato = scanner.nextint();
+			dato = scanner.nextInt();
 			
 		}while(dato >=0);
 		
